@@ -1,0 +1,15 @@
+from bbio import *
+
+def setup():
+  # Start Serial2 at 9600 baud:
+  Serial2.begin(9600)
+
+
+def loop():
+  
+    data="Hola hp"  
+    Serial2.print(data)
+  # And a little delay to keep the Beaglebone happy:
+  delay(200)
+
+run(setup, loop)
