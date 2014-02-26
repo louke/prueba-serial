@@ -1,3 +1,4 @@
+#!/usr/bin/python
 from bbio import *
 
 def setup():
@@ -8,7 +9,7 @@ def setup():
 def loop():
   
     data="Hola hp"  
-    Serial2.print(data)
+    Serial2.prints(data)
   # And a little delay to keep the Beaglebone happy:
     delay(200)
 
